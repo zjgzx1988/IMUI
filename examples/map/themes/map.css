@@ -1,0 +1,80 @@
+﻿.x-button.x-button-plain {
+    background: none;
+    border: 0 none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: none;
+    border-radius: none;
+    min-height: 0;
+    text-shadow: none;
+    height: auto;
+    line-height: auto;
+    margin: -1.5em -0.5em;
+    padding: 1.3em 1em;
+    height: 1.8em;
+}
+
+.refreshBtn {
+    margin: 0 !important;
+}
+
+.x-button.x-iconalign-left, .x-button.x-icon-align-right {
+    -webkit-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    box-direction: reverse;
+    position: absolute;
+    z-index: 5;
+}
+
+ .x-icon-align-right{
+    right: 0;
+ }
+
+.x-button div.x-icon-mask.refresh {
+    -webkit-mask-image: url('data:image/png;base64,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');
+}
+
+.x-button.x-button-plain div{
+    -webkit-mask-size: 1.4em;
+    width: 1.4em;
+    height: 1.4em;
+}
+
+.x-button div.x-icon-mask{
+    background-color: white;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #ffffff), color-stop(51%, #ffffff), color-stop(100%, #eff2f5));
+    background-image: linear-gradient(#ffffff,#ffffff 50%,#ffffff 51%,#eff2f5);
+}
+
+.x-button div {
+    width: 2.1em;
+    height: 2.1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
+.x-button.x-button-plain > *, .x-toolbar .x-button.x-button-plain > * {
+    overflow: visible;
+    margin-top: -0.75em;
+}
+
+.refreshBtn.x-button-pressed {
+    background-color: #516783;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3d4e63), color-stop(10%, #475a73), color-stop(65%, #516783), color-stop(100%, #526884));
+    background-image: linear-gradient(#3d4e63,#475a73 10%,#516783 65%,#526884);
+}
+
+.x-button.x-button-plain.x-button-pressed{
+    background: none;
+    -webkit-box-shadow: none;
+    background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 24, color-stop(0%, rgba(248,251,254,0.7)), color-stop(100%, rgba(248,251,254,0)));
+    background-image: radial-gradient(rgba(248,251,254,0.7),rgba(248,251,254,0) 24px);
+}
+
+.x-button.x-button-plain.x-button-pressed div{
+    background-color: white;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e6e6e6), color-stop(10%, #f2f2f2), color-stop(65%, #ffffff), color-stop(100%, #ffffff));
+    background-image: linear-gradient(#e6e6e6,#f2f2f2 10%,#ffffff 65%,#ffffff);
+}

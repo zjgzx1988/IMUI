@@ -1,0 +1,14 @@
+﻿body
+{
+    font: normal 16px/20px "Helvetica Neue" , Helvetica, sans-serif;
+}
+
+.x-layout-box-inner{
+    -webkit-box-orient: vertical!important;
+    -webkit-box-pack: center!important;
+    display: -webkit-box;
+}
+
+.demobtn {
+    margin: 3% 5%;
+}

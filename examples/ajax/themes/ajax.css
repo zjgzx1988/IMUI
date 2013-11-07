@@ -1,0 +1,16 @@
+﻿body
+{
+    font: normal 16px/20px "Helvetica Neue" , Helvetica, sans-serif;
+}
+
+.x-toolbar-dark {
+    background-color: #24364C;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5a81af), color-stop(2%, #304864), color-stop(100%, #192533));
+    background-image: linear-gradient(#5a81af,#304864 2%,#192533);
+    border-color: black;
+}
+
+.x-toolbar-dark .x-toolbar-title {
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+}

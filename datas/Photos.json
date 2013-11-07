@@ -1,0 +1,8 @@
+﻿{
+    data: [
+        {"photo": "1.jpg", "alt": "1", "annotation": "北京"},
+        {"photo": "2.jpg", "alt": "2", "annotation": "上海"},
+        {"photo": "3.jpg", "alt": "3", "annotation": "杭州"},
+        {"photo": "4.jpg", "alt": "4", "annotation": "香港"}
+    ]
+}

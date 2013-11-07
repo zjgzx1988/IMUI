@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Themes</title>
+    <link type="text/css" rel="Stylesheet" href="themes/themes.css" />
+    <link type="text/css" rel="Stylesheet" href="../../themes/css/imui.ui.css" />
+
+    <script type="text/javascript" src="../../js/jquery-1.6.1.js"></script>
+    <script type="text/javascript" src="../../js/IMUI/imui.device.js"></script>
+    <script type="text/javascript" src="../../js/IMUI/imui.data.js"></script>
+    <script type="text/javascript" src="../../js/IMUI/imui.ui.js"></script>
+    <script type="text/javascript" src="../../js/IMUI/imui.animation.js"></script>
+
+    <script type="text/javascript" src="commons.js"></script>
+
+</head>
+<body>
+    <section>
+        <div class="x-fullscreen current">
+            <div class="x-toolbar x-header">
+                <div class="x-toolbar-title">Themes</div>
+            </div>
+            <div class="x-content">
+                <div class="scroll">
+                    <div class="x-list">
+                        <h2>Change Themes</h2>
+                        <div class="x-list-parent x-list-round">
+                            <div class="x-list-item" ontap="changeThemes('default')"><div class="x-list-item-body">Default</div></div>
+                            <div class="x-list-item" ontap="changeThemes('purple')"><div class="x-list-item-body">Purple</div></div>
+                            <div class="x-list-item" ontap="changeThemes('red')"><div class="x-list-item-body">Red</div></div>
+                            <div class="x-list-item" ontap="changeThemes('pink')"><div class="x-list-item-body">Pink</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="x-footer">
+        <div class="x-toolbar-title">选择不同的样式来改变皮肤</div>
+    </footer>
+</body>
+</html>

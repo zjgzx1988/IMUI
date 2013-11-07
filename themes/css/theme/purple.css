@@ -1,0 +1,376 @@
+﻿.x-fullscreen {
+    background: #EEE;
+}
+
+/* header */
+
+.x-header{
+    background-color: #24364C;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5a81af), color-stop(2%, #304864), color-stop(100%, #192533));
+    background-image: linear-gradient(#5a81af,#304864 2%,#192533);
+    border-color: black;
+}
+
+.x-toolbar-title {
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+}
+
+/* button */
+ 
+ .x-button-normal{
+    background-color: #CCC;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(2%, #dedede), color-stop(100%, #bababa));
+    background-image: linear-gradient(#ffffff,#dedede 2%,#bababa);
+    border: 0.1em solid #999;
+    border-top-color: #A6A6A6;
+    color: black;
+    text-shadow: rgba(255, 255, 255, 0.25) 0 0.08em 0;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 0.1em 0;
+}
+
+.x-button-normal.x-button-pressed{
+    background-color: #BABABA;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a1a1a1), color-stop(10%, #adadad), color-stop(65%, #bababa), color-stop(100%, #bbbbbb));
+    background-image: linear-gradient(#a1a1a1,#adadad 10%,#bababa 65%,#bbbbbb);
+    -webkit-box-shadow: inset #aaa1a1 0 0 0.1em, rgba(255, 255, 255, 0.1) 0 0.1em 0;
+}
+ 
+.x-button-cancel{
+    background-color: #141E29;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #466890), color-stop(2%, #1f2f41), color-stop(100%, #080c11));
+    background-image: linear-gradient(#466890,#1f2f41 2%,#080c11);
+    border: 0.1em solid black;
+    border-top-color: black;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 0.1em 0;
+}
+
+.x-button-cancel.x-button-pressed{
+    background-color: #080C11;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000000), color-stop(10%, #000000), color-stop(65%, #080c11), color-stop(100%, #090d13));
+    background-image: linear-gradient(#000000,#000000 10%,#080c11 65%,#090d13);
+    -webkit-box-shadow: inset black 0 0 0.1em, rgba(255, 255, 255, 0.1) 0 0.1em 0;
+}
+ 
+.x-button-action{
+    background-color: #06346A;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #167bf3), color-stop(2%, #07448c), color-stop(100%, #042348));
+    background-image: linear-gradient(#167bf3,#07448c 2%,#042348);
+    border: 0.1em solid #010509;
+    border-top-color: #021022;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 0.1em 0;
+}
+
+.x-button-action.x-button-pressed{
+    background-color: #042348;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #010c18), color-stop(10%, #031730), color-stop(65%, #042348), color-stop(100%, #04244b));
+    background-image: linear-gradient(#010c18,#031730 10%,#042348 65%,#04244b);
+    -webkit-box-shadow: inset #011023 0 0 0.1em, rgba(255, 255, 255, 0.1) 0 0.1em 0;
+}
+
+.x-button-decline{
+    background-color: #C70505;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fb6a6a), color-stop(2%, #ea0606), color-stop(100%, #a40404));
+    background-image: linear-gradient(#fb6a6a,#ea0606 2%,#a40404);
+    border: 0.1em solid #630303;
+    border-top-color: #7C0303;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 0.1em 0;
+}
+
+.x-button-decline.x-button-pressed{
+    background-color: #A40404;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #720303), color-stop(10%, #8b0404), color-stop(65%, #a40404), color-stop(100%, #a70404));
+    background-image: linear-gradient(#720303,#8b0404 10%,#a40404 65%,#a70404);
+    -webkit-box-shadow: inset maroon 0 0 0.1em, rgba(255, 255, 255, 0.1) 0 0.1em 0;
+}
+
+
+/* msgBox */
+
+.x-msgbox{
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0.1em 0.5em;
+    border: 0.15em solid #354F6E;
+    border-top: 1px solid #030507;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(50,74,103,0.9)), color-stop(2%, rgba(12,17,24,0.9)), color-stop(100%, rgba(0,0,0,0.9)));
+    background-image: linear-gradient(rgba(50,74,103,0.9),rgba(12,17,24,0.9) 2%,rgba(0,0,0,0.9));
+}
+
+.x-msgbox-title{
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+}
+
+.x-msgbox-body{
+    color: rgba(186, 202, 222, 0.9);
+    text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+}
+
+.x-msgbox-input{
+    background-color: rgba(186, 202, 222, 0.9);
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(152,176,205,0.9)), color-stop(10%, rgba(169,189,214,0.9)), color-stop(65%, rgba(186,202,222,0.9)), color-stop(100%, rgba(188,204,223,0.9)));
+    background-image: linear-gradient(rgba(152,176,205,0.9),rgba(169,189,214,0.9) 10%,rgba(186,202,222,0.9) 65%,rgba(188,204,223,0.9));
+    border: 0.1em solid rgba(66, 99, 138, 0.9);
+}
+
+/* picker */
+
+.x-action-sheet{
+    border: .1em solid rgb(50,51,54);
+    border-top: 1px solid #030507;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(50,74,103,0.9)), color-stop(2%, rgba(12,17,24,0.9)), color-stop(100%, rgba(0,0,0,0.9)));
+    background-image: linear-gradient(rgba(50,74,103,0.9),rgba(12,17,24,0.9) 2%,rgba(0,0,0,0.9));
+}
+
+.x-sheet-title{
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+}
+
+.x-action-sheet .x-sheet-body .x-button{
+    border-top: 0.165em solid rgb(44,47,53);
+    border-bottom: 0.165em solid rgb(64,68,76);
+    border-left: 0.165em solid rgb(54,58,66);
+    border-right: 0.165em solid rgb(54,58,66);
+}
+
+div.x-picker{
+    border-top: 1px solid #030507;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(50,74,103,0.9)), color-stop(2%, rgba(12,17,24,0.9)), color-stop(100%, rgba(0,0,0,0.9)));
+    background-image: linear-gradient(rgba(50,74,103,0.9),rgba(12,17,24,0.9) 2%,rgba(0,0,0,0.9));
+}
+
+div.x-picker-header{
+    background-color: #24364C;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5a81af), color-stop(2%, #304864), color-stop(100%, #192533));
+    background-image: linear-gradient(#5a81af,#304864 2%,#192533);
+    border-color: black;
+}
+
+div.x-picker-component{
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #2C2C38),color-stop(0.35, #CBCCE0),color-stop(0.65, #CBCCE0),color-stop(1, #2C2C38));
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+div.x-picker-bar{
+    border-top: 0.12em solid #06346A;
+    border-bottom: 0.12em solid #06346A;
+    background-color: rgba(13, 117, 242, 0.3);
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(158,200,250,0.3)), color-stop(2%, rgba(47,137,244,0.3)), color-stop(100%, rgba(11,101,208,0.3)));
+    background-image: linear-gradient(rgba(158,200,250,0.3),rgba(47,137,244,0.3) 2%,rgba(11,101,208,0.3));
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0.2em 0.2em;
+}
+
+.x-picker div.x-scroller{
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #333),color-stop(0.10, #999),color-stop(0.30, white),color-stop(0.70, white),color-stop(0.90, #999),color-stop(1, #333));
+}
+
+.x-picker-slot {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) -1px 0 1px;
+}
+
+/* Carousel */
+
+.x-carousel-indicator span {
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: none;
+}
+
+span.x-carousel-indicator-active {
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: none;
+}
+
+/* tabs */
+
+.x-segmentedbutton .x-button {
+    background-color: #24364C;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5a81af), color-stop(2%, #304864), color-stop(100%, #192533));
+    background-image: linear-gradient(#5a81af,#304864 2%,#192533);
+    border: 0.1em solid #030507;
+    border-top-color: #0C1118;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 0.1em 0;
+}
+
+.x-segmentedbutton .x-button.x-button-pressed{
+    background-color: #192533;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #080c11), color-stop(10%, #111922), color-stop(65%, #192533), color-stop(100%, #1a2635));
+    background-image: linear-gradient(#080c11,#111922 10%,#192533 65%,#1a2635);
+    -webkit-box-shadow: inset #0b1119 0 0 0.1em, rgba(255, 255, 255, 0.1) 0 0.1em 0;
+}
+
+
+/* list */
+
+.x-list {
+    background-color: #F7F7F7;
+}
+
+.x-list .x-list-item {
+    border-top: 1px solid #D1D1D1;
+}
+
+.x-list .x-list-item.x-item-selected {
+    background-color: #06346A;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #167bf3), color-stop(2%, #07448c), color-stop(100%, #042348));
+    background-image: linear-gradient(#167bf3,#07448c 2%,#042348);
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+    border-top-color: #084B9B;
+    border-bottom-color: #021022;
+}
+
+.x-list .x-list-item.x-item-pressed {
+    border-top-color: #77B2F8;
+    background: #77B2F8 none;
+}
+
+.x-list-header {
+    background-color: #4D80BC;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bccfe6), color-stop(2%, #6792c5), color-stop(100%, #3f6ea6));
+    background-image: linear-gradient(#bccfe6,#6792c5 2%,#3f6ea6);
+    color: #1F3651;
+    text-shadow: rgba(255, 255, 255, 0.25) 0 0.08em 0;
+    border-top: 1px solid #4D80BC;
+    border-bottom: 1px solid #2D4E76;
+    text-shadow: rgba(255, 255, 255, 0.25) 0 0.08em 0;
+    -webkit-box-shadow: 0px 0.1em 0.3em rgba(0, 0, 0, 0.3);
+}
+
+.x-indexbar-item {
+    color: #1E2A38;
+}
+
+.x-indexbar-pressed .x-indexbar-body {
+    background-color: rgba(143, 152, 163, 0.8);
+}
+
+.x-tips{
+    color: rgba(169,169,169,0.5);
+}
+
+/* Calendar */
+
+.x-calendar{
+    text-shadow: rgba(255, 255, 255, 0.9) 0 0.1em 0;
+    -webkit-box-shadow: rgba(0,0,0, .3) 0px 10px 10px;
+    color: rgba(0, 0, 0, .8);
+}
+
+.x-calendar .x-calendar-head{
+    background-color: #DBDBDD;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #F6F6F7), color-stop(30%, #EBEBEC), color-stop(65%, #DBDBDD), color-stop(100%, #CCCCD1));
+    background-image: linear-gradient(#9dc3f3,#5899eb 2%,#3985e7 30%,#1a70dd 65%,#1559af);
+}
+
+.x-calendar-table{
+	border-top: .1em solid #AAAEB6;
+}
+
+.x-calendar .x-list-item-body{
+    background-color: #E3E2E5;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #E3E2E5), color-stop(100%, #DFDEE2));
+    background-image: linear-gradient(#E3E2E5,#DFDEE2);
+    border: .1em solid #AAAEB6;
+    border-right-color: #F3F3F5;
+    border-top-color: #F3F3F5;
+}
+
+.x-list-item-body.x-disabled{
+    color: rgba(128, 128, 128, .8);
+}
+
+.x-list-item-body.x-selected{
+    color: white;
+    border-color: #10151B;
+    background-color: #1A70DD;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5899eb), color-stop(50%, #2b7de6), color-stop(51%, #1a70dd), color-stop(100%, #1864c6));
+    background-image: linear-gradient(#5899eb,#2b7de6 50%,#1a70dd 51%,#1864c6);
+    text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0; 
+}
+
+.x-list-item-body.x-today{
+    color: white;
+    background-color: #7687A1;
+    background-image: none;
+    border-top: none;
+    border-color: #7687A1;
+    -webkit-box-shadow:0px 0px 8px rgba(0,0,0, .9) inset;
+	box-shadow:0px 0px 10px rgba(0,0,0, .9) inset;
+	text-shadow: rgba(0, 0, 0, 0.5) 0 0.1em 0;
+}
+
+.x-list-item-body.x-today.x-selected{
+    background-color: #1980E5;
+    border-color: #1980E5;
+}
+
+
+/* select */
+
+.x-field-select::before {
+    background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(255, 255, 255, 0)), color-stop(0.5, white));
+}
+
+.x-field-select::after {
+    border-top-color: #DDD;
+}
+
+/* footer */
+
+.x-footer {
+    background-color: #141E29;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #466890), color-stop(2%, #1f2f41), color-stop(100%, #080c11));
+    background-image: linear-gradient(#466890,#1f2f41 2%,#080c11);
+    border-color: #0C1118;
+}
+
+.x-footer .x-tab-active {
+    background-color: #1C2A3A;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4e74a2), color-stop(2%, #283b52), color-stop(100%, #111922));
+    background-image: linear-gradient(#4e74a2,#283b52 2%,#111922);
+    text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+    -webkit-box-shadow: inset rgba(255, 255, 255, 0.3) 0 0 0.1em;
+}
+
+.x-tab .x-button-label {
+    color: #5A81AF;
+}
+
+.x-footer .x-tab-active .x-button-label {
+    color: white;
+}
+
+.x-footer .x-tab div {
+    background-color: #354F6E;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7c9bc0), color-stop(2%, #416086), color-stop(100%, #293e56));
+    background-image: linear-gradient(#7c9bc0,#416086 2%,#293e56);
+}
+
+.x-footer .x-tab.x-tab-active div {
+    background-color: #0A7AFF;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #57a3ff), color-stop(50%, #2488ff), color-stop(51%, #0a7aff), color-stop(100%, #006df0));
+    background-image: linear-gradient(#57a3ff,#2488ff 50%,#0a7aff 51%,#006df0);
+}
+
+
+/* Pull down styles */
+
+.x-pull-down, .x-pull-up {
+	border-bottom:1px solid #D1D1D1;
+}
+
+.x-pull-down .x-pull-label{
+    color: #999;
+}

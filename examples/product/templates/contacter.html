@@ -1,0 +1,33 @@
+﻿<div class="x-fullscreen">
+    <div class=" x-toolbar x-header">
+        <div class="x-toolbar-title">{$P.name}</div>
+        <div class="x-header-operat">
+            <div class="x-button backBtn x-button-plain x-icon-align-left" data-href="#">
+                <div class="back x-icon-mask"></div>
+            </div>
+        </div>
+    </div>
+    <div class="x-content">
+        <div class="scroll">
+            <div class="x-html">
+                <p>
+                    <strong>Tel:</strong> {$P.tel}
+                </p>
+                <p>
+                    <strong>Description:</strong> Fifteen years and two recessions into the commercial Internet, it's clear that our industry has moved into a competitive phase—a 
+                    "middlegame" in the battle to dominate the Internet Economy. At this year's Web 2.0 Summit, we're focusing on these shifting points of control—
+                    <a href="http://www.google.com.hk">strategic chokepoints on an increasingly crowded board</a>
+                </p>
+                <div class="x-msgbox-bottom">
+                    <div class="x-button x-button-cancel" ontap="callContacter({$P.tel})">
+                        <span class="x-button-label">电话</span>
+                    </div>
+                    <div class="x-button-interval"></div>
+                    <div class="x-button x-button-action" ontap="msgContacter({$P.tel})">
+                        <span class="x-button-label">短信</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

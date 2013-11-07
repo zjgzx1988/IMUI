@@ -1,0 +1,23 @@
+﻿<div class="x-panel x-fullscreen">
+    <div class="x-toolbar x-header">
+        <div class="x-toolbar-title">Photos</div>
+        <div class="x-header-operat">
+            <div class="x-button backBtn x-button-plain x-icon-align-left" data-href="#">
+                <div class="back x-icon-mask"></div>
+            </div>
+        </div>
+    </div>
+    <div class="x-content" id="carousel">
+        {#foreach $T.data as data}
+        <div class="card">
+            <div class="x-photo">
+                <img src="photos/{$T.data.photo}" alt="{$T.data.alt}" />
+            </div>
+            <div class="x-annotation">
+                {$T.data.annotation}
+            </div>
+        </div>
+        {#/for}
+    </div>
+</div>
+

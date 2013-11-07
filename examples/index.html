@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+
+<title>IMUI Examples</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<link rel="apple-touch-icon-precomposed" href="resources/shared/img/apple-touch-icon.png">
+
+<style type="text/css">
+*{
+    /*
+    -webkit-backface-visibility: hidden;
+    */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+    border-top: 20px solid #043554;
+}
+
+body {
+    background: #004D82 url(resources/shared/img/_bg-blue.gif) repeat;
+    color: #444;
+    font: normal 12px/1.5 HelveticaNeue,Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    height: 72px;
+    margin: 0;
+    position: relative;
+    width: 155px;
+    z-index: 99;
+    text-align: center;
+}
+
+#logo a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: White;
+    font-size: 4.5em;
+}
+
+
+ol, p {
+    margin: 0 0 1em;
+    padding: 0;
+}
+
+a:link,
+a:visited {
+    color: #126499;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #0464BB;
+    text-decoration: underline;
+}
+
+.container {
+    margin: 0 auto;
+    width: 728px;
+}
+
+#page {
+    background: #fff;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.296875) 0px 1px 2px;
+    -moz-box-shadow:    rgba(0, 0, 0, 0.296875) 0px 1px 2px;
+    box-shadow:         rgba(0, 0, 0, 0.296875) 0px 1px 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius:    5px;
+    -o-border-radius:      5px;
+    border-radius:         5px;
+    margin: 0 auto;
+}
+
+#tuts {
+    padding: 24px 63px 0;
+}
+
+ul.list {
+    font-size: 16px;
+    line-height: 20px;
+    list-style-type: none;
+    margin: 12px 0px 24px;
+    padding: 0px;
+}
+
+.list #tut_offline_apps a {
+    background: url(resources/shared/img/offline.png) no-repeat 0px 0.3em;
+}
+
+.list #tut_phonegap a {
+    background: url(resources/shared/img/phonegap.png) no-repeat 0px 0.3em;
+}
+
+.list a {
+    display: block;
+    font-weight: bold;
+    padding: 0.5em 0px 0.5em 2.4em;
+}
+
+ol#grid {
+    list-style: none;
+    overflow: auto;
+    padding: 47px 63px 0;
+}
+
+ol#grid li {
+    float: left;
+    position: relative;
+}
+
+ol#grid li a {
+    background: transparent;
+    -webkit-border-radius: 12px;
+    -moz-border-radius:    12px;
+    border-radius:         12px;
+
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.153);
+    -moz-box-shadow:    0 0 10px rgba(0,0,0,0.153);
+    box-shadow: 0 0 10px rgba(0,0,0,0.153);
+
+    color: #0464BB;
+    display: block;
+    height: 72px;
+    margin: 0 121px 68px 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.333);
+    vertical-align: middle;
+    width: 72px;
+}
+
+ol#grid li a img {
+    border: none;
+    -webkit-transition: opacity 0.23s ease-in-out;
+    -moz-transition:    opacity 0.23s ease-in-out;
+    transition:         opacity 0.23s ease-in-out;
+}
+
+ol#grid li a:hover,
+ol#grid li a:focus,
+ol#grid li a:active {
+    background: #000;
+}
+
+ol#grid li a:hover img,
+ol#grid li a:focus img,
+ol#grid li a:active img {
+    opacity: 0.65;
+}
+
+    ol#grid li a,
+    ol#grid li:nth-child(5n) a {
+        margin: 0 104px 87px 0;
+    }
+    ol#grid li:nth-child(2n) a {
+        margin-right: 105px;
+    }
+    ol#grid li:nth-child(4n) a {
+        margin-right: 0;
+    }
+
+ol#grid li a span {
+    color: #314E64;
+    font-weight: bold;
+    letter-spacing: -0.01em;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    white-space: nowrap;
+}
+
+#footer {
+    color: #E2E5FF;
+    font-weight: bold;
+}
+
+#footer p {
+    padding: 0 13px;
+}
+
+#footer em {
+    font-style: normal;
+    padding-left: 20px;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+    /* iPad landscape */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+        .container {
+            margin: 0 20px;
+            width: 984px;
+        }
+
+        #tuts {
+            padding: 24px 70px 0;
+        }
+        
+        ol#grid {
+            list-style: none;
+            overflow: auto;
+            padding: 42px 70px 30px;
+        }
+        ol#grid li a,
+        ol#grid li:nth-child(2n) a,
+        ol#grid li:nth-child(4n) a {
+            margin: 0 121px 68px 0;
+        }
+        ol#grid li:nth-child(5n) a {
+            margin-right: 0;
+        }
+
+    }
+
+    /* iPad portrait */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+        .container {
+            margin: 0 20px;
+            width: 728px;
+        }
+
+        #tuts {
+            padding: 24px 63px 0;
+        }
+
+        ol#grid {
+            padding: 47px 63px 0;
+        }
+        ol#grid li a,
+        ol#grid li:nth-child(5n) a {
+            margin: 0 104px 87px 0;
+        }
+        ol#grid li:nth-child(2n) a {
+            margin-right: 105px;
+        }
+        ol#grid li:nth-child(4n) a {
+            margin-right: 0;
+        }
+
+    }
+
+    /* iPhone landscape */
+    @media only screen and (max-device-height: 320px) and (orientation: landscape) {
+        
+        html {
+            border-top: 2px solid #043554;
+        }
+
+        .container {
+            width: 480px;
+        }
+
+        #page {
+            -webkit-box-shadow: rgba(0, 0, 0, 0.296875) 0px 1px 2px;
+            -moz-box-shadow:    rgba(0, 0, 0, 0.296875) 0px 1px 2px;
+            box-shadow:         rgba(0, 0, 0, 0.296875) 0px 1px 2px;
+        }
+                
+        #tuts {
+            padding: 17px 36px 0;
+        }
+
+        ol#grid {
+            padding: 17px 36px;
+        }
+        ol#grid li a,
+        ol#grid li:nth-child(2n) a,
+        ol#grid li:nth-child(5n) a {
+            -webkit-box-shadow: none;
+            margin: 0 40px 31px 0;
+            text-shadow: none;
+        }
+        ol#grid li:nth-child(4n) a {
+            margin-right: 0;
+        }
+
+        #footer {
+            font-size: 10px;
+        }
+        
+    }
+    
+    /* iPhone portrait */
+    @media only screen and (max-device-width: 320px) and (orientation: portrait) {
+        
+        html {
+            border-top: 2px solid #043554;
+        }
+
+        .container {
+            width: 320px;
+        }
+
+        #page {
+            -webkit-box-shadow: rgba(0, 0, 0, 0.296875) 0px 1px 2px;
+            -moz-box-shadow:    rgba(0, 0, 0, 0.296875) 0px 1px 2px;
+            box-shadow:         rgba(0, 0, 0, 0.296875) 0px 1px 2px;
+        }
+        
+        #tuts {
+            padding: 17px 17px 0;
+        }
+
+        h1 {
+            font-size: 17px;
+        }
+
+        ol#grid {
+            padding: 17px;
+        }
+        ol#grid li a,
+        ol#grid li a img {
+            height: 57px;
+            width:  57px;
+        }
+        ol#grid li a,
+        ol#grid li:nth-child(5n) a {
+            -webkit-box-shadow: none;
+            margin: 0 19px 31px 0;
+            text-shadow: none;
+        }
+        ol#grid li a span {
+            display: block;
+            font-size: 11px;
+            line-height: 11px;
+        }
+        ol#grid li:nth-child(2n) a {
+            margin-right: 20px;
+        }
+        ol#grid li:nth-child(4n) a {
+            margin-right: 0;
+        }
+
+        #footer em {
+            padding-left: 10px;
+        }
+
+    }
+    
+    /* only screen and (max-width: 480px), only screen and (max-device-width: 480px) */
+    @media only screen and (min-device-width: 600px) and (orientation: portrait) {
+        
+        .container {
+            margin: 0 20px;
+            width: 568px;
+        }
+
+        #tuts {
+            padding: 18px 49px 0;
+        }
+
+        ol#grid {
+            padding: 36px 49px 0;
+        }
+        ol#grid li a,
+        ol#grid li:nth-child(5n) a {
+            margin: 0 60px 68px 0;
+        }
+        ol#grid li:nth-child(2n) a {
+            margin-right: 60px;
+        }
+        ol#grid li:nth-child(4n) a {
+            margin-right: 0;
+        }
+        
+    }
+</style>
+
+</head>
+<body>
+
+<div id="content">
+    <div id="header" class="container">
+        <h5 id="logo"><a>IMUI</a></h5>
+    </div>
+    <div id="page" class="container">
+        <div id="tuts">
+            <h1>Demos &amp; Examples</h1>
+        </div>
+    
+        <ol id="grid">
+            <li><a id="product" href="product/index.html">
+                <img src="resources/shared/img/product.png" alt="Product" height="72" width="72" />
+                <span>Product</span>
+            </a></li>
+            <li><a id="animations" href="animations/index.html">
+                <img src="resources/shared/img/animations.png" alt="Animations" height="72" width="72" />
+                <span>Animations</span>
+            </a></li>
+            <li><a id="ajax" href="ajax/index.html">
+                <img src="resources/shared/img/ajax.png" alt="AJAX" height="72" width="72" />
+                <span>AJAX</span>
+            </a></li>
+            <li><a id="carousel" href="carousel/index.html">
+                <img src="resources/shared/img/carousel.png" alt="Carousel" height="72" width="72" />
+                <span>Carousel</span>
+            </a></li>
+            <li><a id="dragdrop" href="dragdrop/index.html">
+                <img src="resources/shared/img/dragdrop.png" alt="Drag &amp; Drop" height="72" width="72" />
+                <span>Drag &amp; Drop</span>
+            </a></li>
+            <li><a id="websockets" href="websockets/index.html">
+                <img src="resources/shared/img/websocket.png" alt="Websockets" height="72" width="72" />
+                <span>Websockets</span>
+            </a></li>
+            <li><a id="msgbox" href="msgbox/index.html">
+                <img src="resources/shared/img/msgbox.png" alt="msgbox" height="72" width="72" />
+                <span>Msgbox</span>
+            </a></li>
+            <li><a id="map" href="map/index.html">
+                <img src="resources/shared/img/map.png" alt="Map" height="72" width="72" />
+                <span>Map</span>
+            </a></li>
+            <li><a id="list" href="list/index.html">
+                <img src="resources/shared/img/list.png" alt="List&Tabs" height="72" width="72" />
+                <span>List &amp; Tabs</span>
+            </a></li>
+            <li><a id="pullrefresh" href="pullrefresh/index.html">
+                <img src="resources/shared/img/pullrefresh.png" alt="PullRefresh" height="72" width="72" />
+                <span>PullRefresh</span>
+            </a></li>
+            <li><a id="media" href="media/index.html">
+                <img src="resources/shared/img/media.png" alt="Media" height="72" width="72" />
+                <span>Media</span>
+            </a></li>
+            
+            <li><a id="picker" href="picker/index.html">
+                <img src="resources/shared/img/picker.png" alt="Picker" height="72" width="72" />
+                <span>Picker</span>
+            </a></li>
+            <li><a id="footer" href="footer/index.html">
+                <img src="resources/shared/img/footer.png" alt="Footer" height="72" width="72" />
+                <span>Footer</span>
+            </a></li>
+            <li><a id="themes" href="themes/index.html">
+                <img src="resources/shared/img/themes.png" alt="Themes" height="72" width="72" />
+                <span>Themes</span>
+            </a></li>
+            <li><a id="scroll" href="scroll/index.html">
+                <img src="resources/shared/img/scroll.png" alt="Scroll" height="72" width="72" />
+                <span>Scroll</span>
+            </a></li>
+            <li><a id="calendar" href="calendar/index.html">
+                <img src="resources/shared/img/Calendar.png" alt="Calendar" height="72" width="72" />
+                <span>Calendar</span>
+            </a></li>
+            <li><a id="landscape" href="landscape/index.html">
+                <img src="resources/shared/img/landscape.png" alt="Landscape" height="72" width="72" />
+                <span>Landscape</span>
+            </a></li>
+        </ol>
+    </div>
+</div>
+</body>
+</html>

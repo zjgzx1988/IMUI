@@ -1,0 +1,14 @@
+﻿data-href       -->   必选参数 模板 可以为不需要json数据的页面
+data-json       -->   获取 json 数据的 url
+data-params     -->   远程获取数据时传递的参数，会以"?id=1&name=2"的形式与data-json组合
+data-cacheKey   -->   cacheKey 指定后，获取的数据将被缓存，不指定则不缓存。
+data-remote     -->   是否远程数据 配合 json 使用
+data-tran       -->   跳转时的动画效果
+data-sfn        -->   跳转前执行的函数，建议只对页面的dom进行size控制，将消耗资源的操纵放到跳转结束后执行，减少跳转时的处理压力，可以通过that来获取即将跳转的页面，用$("section>div.current")来获取当前页面
+data-fn         -->   跳转后执行的函数，可以通过获取$("section>div.current")来获取当前的页面，通过that来获取已经跳转掉的页面
+data-efn        -->   跳转后执行的函数，与data-fn相同
+data-id         -->   控制跳转页面的id，不控制，则为自动生成不重复的id
+data-nofooter   -->   控制跳转页面时footer也跟着跳转，使得跳转后的页面占据整个屏幕(注：目前只当跳转方式为平移跳转的时候才能用，即data-tran为空或者slide)
+
+直接写在dom里作为属性时需要加上前缀data-
+如果是作为数据写在json文件中，则去掉前缀data-
